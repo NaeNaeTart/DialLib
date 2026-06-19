@@ -40,6 +40,31 @@ Mods can include rich, dynamic tags inside their JSON files or default lists. `D
 | **`<limb>`** | Lowercase name of targeted/injured limb | `left arm` or `head` |
 | **`<weapon>`** / **`<item>`** | Name of the currently held weapon or item | `Machete` or `nothing` |
 
+### 2.2 Pre-Registered Dialogue Modes (Out of the Box)
+`DialLib` comes with several pre-registered dialogue modes out-of-the-box. These are immediately usable by any mod or can be translated inside `EN.json`:
+
+1. **`laststand`** (Last Stand)
+   - Triggered when fighting for survival on critical health or high adrenaline.
+   - *Example fallback:* `"I'm not dying here! Not like this!"`
+2. **`boss_spotted`** (Boss/Threat Spotted)
+   - Triggered when spotting a large, heavy, or unique experimental creature.
+   - *Example fallback:* `"That is NOT a normal specimen! Look at the size of it!"`
+3. **`low_ammo`** (Out of Ammo)
+   - Triggered when firing on empty or during a dry magazine reload.
+   - *Example fallback:* `"Click... empty! Need to reload!"`
+4. **`critical_bleed`** (Critical Bleeding)
+   - Triggered when bleeding heavily or when blood volume is severely low.
+   - *Example fallback:* `"I need a bandage now! I've lost <blood> of my blood!"`
+5. **`broken_bone`** (Bone Fracture/Dislocation)
+   - Triggered when a physical limb is fractured, broken, or dislocated.
+   - *Example fallback:* `"Crack... my <limb>! I think it's broken!"`
+6. **`healed_limb`** (Limb Treatment)
+   - Triggered when a wound or limb is wrapped, patched, or healed.
+   - *Example fallback:* `"Applied the dressing. Pain is down to <pain>."`
+7. **`stumble`** (Stumbling/Tripping)
+   - Triggered when slipping, tripping over loose gravel, or glass.
+   - *Example fallback:* `"Tripped on the loose rocks! Nearly broke my <limb>!"`
+
 ---
 
 ## 3. How to Use DialLib in Your Mod
